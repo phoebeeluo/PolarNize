@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/src/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/toxicity"></script>
+
+</head>
+
+<body>
+    <div class="modal-header">
+        <h1 class="logo">
+            <img class="logo-icon" src="/assets/icon.png" />PolarNize
+        </h1>
+    </div>
+    <div class="modal-content">
+        <p>Preventing polarization by keeping you aware of the media you consume. </p>
+
+
+        <form class="sentenceInput">
+            <label> Input: </label>
+            <input type="text" name="input" id="userInput" placeholder="Write Here">
+            <button>Submit</button>
+        </form>
+
+        <section id="content">
+            <ul class="app">
+
+            </ul>
+
+        </section>
+
+
+
+    </div>
+    <script src="/src/popup.js"></script>
+</body>
+
+</html>
